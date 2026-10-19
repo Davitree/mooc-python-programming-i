@@ -17,7 +17,7 @@ def second_word(word):
         i+=1
     j= i+1
     while True:
-        if word[j] == " " or word[j] == word[len(word)-1]:
+        if word[j] == " " :
             break
         j+=1
     return word[i+1:j]
@@ -35,3 +35,6 @@ if __name__ == "__main__":
     print(first_word(sentence))
     print(second_word("first second"))
     print(last_word(sentence))
+
+
+
